@@ -9,23 +9,38 @@ body {
     margin-bottom: 50px;
 }
 
-ul.menu {
-    list-style: none;
-    overflow: hidden;
-    position:fixed;
-    width: 100%;
+.menu {
     z-index: 100;
+    width: 100%;
+    height: 60px;
+    background-color: #757575;
 }
 
-ul.menu li {
-    width: 140px;
-    text-align: center;
-    background-color: #333;
-    float: left;
+.menu ul {
+	text-align: center;
+	margin-left: 5px;
+    margin-right: 5px;
+	letter-spacing: -.4em; /* タグ改行時の空白防止 */
+    list-style: none;
+
+    height: 60px;
+    line-height: 60px;
+}
+
+.menu ul li {
+	display: inline-block;
+	margin-left: 10px;
+	letter-spacing: normal; /* 元に戻す */
     color: #fff;
     font-weight: bold;
-    cursor: pointer;
-    
+    font-size: 3vmax;
+
+    vertical-align: middle;
+    -webkit-box-align: center; /* safari, Chrome対応 */
+    -moz-box-align: center;    /* Firefox対応 */
+    -o-box-align: center;      /* Opera対応 */
+    -ms-box-align: center;     /* IE対応 */
+    box-align: center;         /* ベンダープレフィックス無しも併記する */
 }
 
 .top {
