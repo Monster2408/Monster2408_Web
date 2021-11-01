@@ -9,14 +9,14 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
         <!-- ＃リンクのスムーススクロール -->
-        <script src="./js/top.js"></script>
+        <script src="./assets/js/top.js"></script>
 
         <!-- Style CSS -->
-        <link rel="stylesheet" href="css/style.min.css">
+        <link rel="stylesheet" href="./assets/css/style.min.css">
         <!-- アイコン -->
-        <link rel="icon" href="./img/icon.ico">
-        <link rel="apple-touch-icon" href="./img/icon.png" sizes="180x180">
-        <link rel="icon" type="image/png" href="./img/icon.png" sizes="192x192">
+        <link rel="icon" href="./assets/img/icon.ico">
+        <link rel="apple-touch-icon" href="./assets/img/icon.png" sizes="180x180">
+        <link rel="icon" type="image/png" href="./assets/img/icon.png" sizes="192x192">
 
         <title>Monster2408</title>
     </head>
@@ -51,6 +51,6 @@
         <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
 
         <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="./js/bottom.js"></script>
+        <script src="./assets/js/bottom.js"></script>
     </body>
 </html>
