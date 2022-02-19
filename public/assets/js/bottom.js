@@ -1,27 +1,19 @@
-ScrollReveal().reveal(
-    '.top', {
-        reset: true, 
-        top: 0, 
-        right: 0, 
-        bottom: 0, 
-        left: 0
+function popupImage() {
+    var popup = document.getElementById('js-popup');
+    if(!popup) return;
+
+    var blackBg = document.getElementById('js-black-bg');
+    var closeBtn = document.getElementById('js-close-btn');
+    var showBtn = document.getElementById('js-show-popup');
+
+    closePopUp(blackBg);
+    closePopUp(closeBtn);
+    closePopUp(showBtn);
+    function closePopUp(elem) {
+        if(!elem) return;
+        elem.addEventListener('click', function() {
+            popup.classList.toggle('is-show');
+        });
     }
-);
-ScrollReveal().reveal(
-    '.second_field', {
-        reset: true, 
-        top: 0, 
-        right: 0, 
-        bottom: 0, 
-        left: 0
-    }
-);
-ScrollReveal().reveal(
-    '.third_field', {
-        reset: true, 
-        top: 0, 
-        right: 0, 
-        bottom: 0, 
-        left: 0
-    }
-);
+}
+popupImage();

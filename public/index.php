@@ -8,7 +8,7 @@ printCommonHead();
     <div class="black_box">
         <h1>MonsterLifeServer</h1>
         <ul>
-            <li><a href="https://www.mlserver.xyz/" target="_blank">Web Site</a></li>
+            <li><a href="https://www.mlserver.xyz/" target="_blank">ホームページ</a></li>
             <li><a href="https://youtube.mlserver.xyz/" target="_blank">YouTube</a></li>
             <li><a href="https://twitter.mlserver.xyz/" target="_blank">Twitter</a></li>
             <li><a href="https://twitch.mlserver.xyz/" target="_blank">Twitch</a></li>
@@ -20,8 +20,10 @@ printCommonHead();
             <li><a href="https://twitter.com/monster_2408" target="_blank">Twitter</a></li>
             <!--<li><a href="./repo">GitHub Source</a></li>-->
             <li><a href="https://www.mlserver.xyz/blog/category/skript-couse/" target="_blank">Skript講座</a></li>
+            <li><a href="#" id="js-show-popup">プロフィール</a></li>
         </ul>
     </div>
 </div>
+<?php include("./assets/include/profile.php"); ?>
 
 <?php printCommonFoot(); ?>
