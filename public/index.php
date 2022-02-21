@@ -28,11 +28,7 @@ printCommonHead("./assets/config.php", "Monster2408");
             <!--<li><a href="./api/covid">Covid</a></li>-->
             <li><a href="./api/google_img_search">Google画像検索【サイズ指定】</a></li>
         </ul>
-        <div class="footer-center" style="border-top: 1px solid #000; margin-top: 10px; margin-bottom: 10px; padding-top: 20px; padding-bottom: 20px;">
-            <span><a href="./index">トップページ</a></span><br>    
-            <span><a href="./privacy-policy">プライバシーポリシー</a></span><br>
-            <span class="name"> Monster2408 &copy; 2021-<?php echo date("Y"); ?></span>
-        </div>
+        <?php printFooter("./"); ?>
     </div>
 </div>
 <?php include("./assets/include/profile.php"); ?>

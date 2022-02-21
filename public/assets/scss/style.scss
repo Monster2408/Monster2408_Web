@@ -109,6 +109,14 @@ ul {
     }
 }
 
+.footer-center {
+    border-top: 1px solid #000; 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    padding-top: 20px; 
+    padding-bottom: 20px;
+}
+
 @media screen and (max-width: 350px) {
     h1 {
         font-size: 35px;
