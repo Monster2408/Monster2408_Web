@@ -1,14 +1,14 @@
 <?php
-$function = include_once("./function.php");
+include_once("./function.php");
+$conf_path = "./assets/config.php";
+$func = new MyFunction($conf_path, "プライバシーポリシー");
 
-printCommonHead("./assets/config.php", "プライバシーポリシー | Monster2408");
+$func->printCommonHead();
 ?>
 
 <div class="all_center">
     <div class="black_box">
-        <header style="border-bottom: 1px solid #000; margin-top: 10px; margin-bottom: 10px; padding-top: 20px; padding-bottom: 20px; font-size: 30px;">
-            <span>プライバシーポリシー</span>
-        </header>
+        <?php $func->printHeader(); ?>
         <div style="width: 100%; max-width: 850px; margin-right: auto; margin-left: auto;">
             <div class="row text-left">
                 <div class="col-md-6">
@@ -21,7 +21,7 @@ printCommonHead("./assets/config.php", "プライバシーポリシー | Monster
                 </div>
             </div>
         </div>
-        <?php printFooter("./"); ?>
+        <?php $func->printFooter(); ?>
     </div>
 </div>
-<?php printCommonFoot("./assets/config.php"); ?>
+<?php $func->printCommonFoot(); ?>

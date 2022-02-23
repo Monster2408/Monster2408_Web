@@ -1,10 +1,11 @@
 <?php
-$function = include_once("../function.php");
-$config = include_once("../assets/config.php");
+include_once("../function.php");
+$conf_path = "../assets/config.php";
+$func = new MyFunction($conf_path, "Google画像検索【サイズ指定】");
 
-printCommonHead("../assets/config.php", "Google画像検索【サイズ指定】| Monster2408");
+$func->printCommonHead();
 ?>
-<link rel="stylesheet" href="<?php echo $conf["url"]; ?>/assets/css/google_img_search.min.css">
+<link rel="stylesheet" href="<?php echo $func->getUrl(); ?>/assets/css/google_img_search.min.css">
 <div class="all_center">
     <div class="black_box">
         <div id="container">
@@ -21,14 +22,14 @@ printCommonHead("../assets/config.php", "Google画像検索【サイズ指定】
             </div>
 
             <div class="tbl">
-                <div class="label">Width 幅 (px):</div><input type="text" id="width">
+                <div class="label">Width 幅 (px):</div><input type="number" min="1" step="1" id="width">
             </div>
 
             <div class="tbl">
-                <div class="label">Height 高さ (px):</div><input type="text" id="height">
+                <div class="label">Height 高さ (px):</div><input type="number" min="1" step="1" id="height">
             </div>
         </div>
-        <?php printFooter("../"); ?>
+        <?php $func->printFooter(); ?>
     </div>
 </div>
 <script>
@@ -46,9 +47,9 @@ printCommonHead("../assets/config.php", "Google画像検索【サイズ指定】
         const e=l.value.replace(/[　 ]+/g," ").trim();
         if(e.length>0&&n.value&&d.value&&Number.isInteger(n.value-0)&&Number.isInteger(d.value-0)){
             const t="https://www.google.com/search?tbm=isch&q="+e+"+imagesize:"+n.value+"x"+d.value;
-            location.href=t
+            window.open(t, '_blank')
         }
     })
 })();
 </script>
-<?php printCommonFoot("../assets/config.php"); ?>
+<?php $func->printCommonFoot(); ?>

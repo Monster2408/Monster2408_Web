@@ -1,7 +1,9 @@
 <?php
-$function = include_once("./function.php");
+include_once("./function.php");
+$conf_path = "./assets/config.php";
+$func = new MyFunction($conf_path);
 
-printCommonHead("./assets/config.php", "Monster2408");
+$func->printCommonHead();
 ?>
 
 <div class="all_center">
@@ -25,12 +27,13 @@ printCommonHead("./assets/config.php", "Monster2408");
 
         <h1>Service</h1>
         <ul>
-            <!--<li><a href="./api/covid">Covid</a></li>-->
+            <li><a href="./api/covid">Covid</a></li>
             <li><a href="./api/google_img_search">Google画像検索【サイズ指定】</a></li>
         </ul>
-        <?php printFooter("./"); ?>
+        
+        <?php $func->printFooter(); ?>
     </div>
 </div>
 <?php include("./assets/include/profile.php"); ?>
 
-<?php printCommonFoot("./assets/config.php"); ?>
+<?php $func->printCommonFoot(); ?>
