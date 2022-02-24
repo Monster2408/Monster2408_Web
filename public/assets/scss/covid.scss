@@ -1,32 +1,46 @@
 
 //PCのデフォルトスタイルは割愛します
-.covid td:first-child {
-    background: #fbf5f5;
-}
 .all_center {
     text-align:center;
 }
 .covid {
     margin-left: auto;
     margin-right: auto;
-    width: 640px;
+    width: 100%;
+    max-width: 640px;
+    border: 3px solid #666666;
     .thead {
         border-bottom: 1px double #000;
-        background: #e9727e;
+        background: #666666;
         color: #fff;
         font-weight: bold;
         text-align: center;
+        position: sticky;
+        top: 0px;
     }
     td {
         text-align: right;
         &:first-child {
+            font-weight: bold;
             text-align: center;
+        }
+        
+    }
+    tr:nth-child(2n) {
+        background: #d6d6d6;
+    }
+}
+.footer-center {
+    a {
+        color: rgba(119, 119, 119, 0.92);
+        &:hover,
+        &:active {
+            color: rgba(119, 119, 119, 0.6);
         }
     }
 }
 @media screen and (max-width: 640px) {
     .covid {
-        width: 80%;
         .thead {
             display: none;
         }
@@ -38,7 +52,7 @@
             text-align: right;
             width: 100%;
             &:first-child {
-                background: #e9727e;
+                background: #666666;
                 color: #fff;
                 font-weight: bold;
                 text-align: center;
@@ -48,6 +62,13 @@
                 float: left;
                 font-weight: bold;
                 margin-right: 10px;
+            }
+            &.occurrence,
+            &.pcr {
+                background: #d6d6d6;
+            }
+            &.deceased {
+                background: #fff;
             }
         }
     }

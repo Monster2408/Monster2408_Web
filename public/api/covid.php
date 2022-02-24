@@ -4,6 +4,7 @@ $conf_path = "../assets/config.php";
 $func = new MyFunction($conf_path, "Covid");
 
 $func->printCommonHead("covid.min.css");
+$func->addFooterContent('<span><a href="https://github.com/ryo-ma/covid19-japan-web-api">powered by covid19-japan-web-api</a></span>');
 ?>
 
 <div class="all_center">
@@ -27,9 +28,9 @@ $func->printCommonHead("covid.min.css");
                     }
                     echo "<tr".$tag.">";
                     echo "<td>".$data['name_ja']."</td>";
-                    echo "<td data-label='発生件数'>".$data['cases']."件</td>";
-                    echo "<td data-label='死者数'>".$data['deaths']."人</td>";
-                    echo "<td data-label='PCR件数'>".$data['pcr']."件</td>";
+                    echo "<td class='occurrence' data-label='発生件数'>".$data['cases']."件</td>";
+                    echo "<td class='deceased' data-label='死者数'>".$data['deaths']."人</td>";
+                    echo "<td class='pcr' data-label='PCR件数'>".$data['pcr']."件</td>";
                     echo "</tr>";
                 }
             ?>

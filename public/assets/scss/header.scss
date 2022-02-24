@@ -1,0 +1,24 @@
+header {
+    border-bottom: 1px solid #000; 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    font-size: 30px;
+    a {
+        position: relative;
+        display: inline-block;
+        color: rgba(255, 255, 255, 0.6);
+        transition-duration: 300ms;
+        text-decoration: none;
+        &:hover,
+        &:active {
+            color: rgba(255, 255, 255, 0.92);
+            transition-duration: 300ms;
+        }
+        &:hover {
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+}
