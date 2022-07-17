@@ -5,6 +5,7 @@ class MyFunction {
     public $conf_path;
     public $title;
     public $footerContents;
+    public $headContents;
 
     public function __construct($conf_path = "", $title = "Monster2408") {
         $this->conf_path = $conf_path;
@@ -16,10 +17,15 @@ class MyFunction {
             '<span><a href="'.$conf["url"].'/privacy-policy">プライバシーポリシー</a></span>',
             '<span class="name"> Monster2408 &copy; 2021-'.date("Y").'</span>'
         ];
+        $this->headContents = [];
     }
 
     public function addFooterContent($content) {
         $this->footerContents = array_merge(array($content), $this->footerContents);
+    }
+
+    public function addHeadContent($content) {
+        $this->headContents = array_merge(array($content), $this->headContents);
     }
 
     public function printCommonHead($css = "style.min.css") {
@@ -30,6 +36,11 @@ class MyFunction {
             echo "<title>".$this->title." | Monster2408</title>";
         } else {
             echo "<title>".$this->title."</title>";
+        }
+        if (sizeof($this->headContents) > 0) {
+            foreach ($this->headContents as $item) {
+                echo $item;
+            }
         }
         echo "</head>";
         echo "<body>";
