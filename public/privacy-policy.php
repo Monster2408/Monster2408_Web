@@ -21,7 +21,7 @@ $func->printCommonHead();
                 </div>
             </div>
         </div>
-        <?php $func->printFooter(); ?>
     </div>
+    <?php $func->printFooter(); ?>
 </div>
 <?php $func->printCommonFoot(); ?>

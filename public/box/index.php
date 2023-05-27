@@ -11,7 +11,7 @@ $func->printCommonHead();
         <ul>
             <li><a href="./monster-bot">MonsterBot</a></li>
         </ul>
-        <?php $func->printFooter(); ?>
     </div>
+    <?php $func->printFooter(); ?>
 </div>
 <?php $func->printCommonFoot(); ?>

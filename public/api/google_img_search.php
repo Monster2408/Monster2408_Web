@@ -30,8 +30,8 @@ $func->printCommonHead();
                 <div class="label">Height 高さ (px):</div><input type="number" min="1" step="1" id="height">
             </div>
         </div>
-        <?php $func->printFooter(); ?>
     </div>
+    <?php $func->printFooter(); ?>
 </div>
 <script>
 (()=>{

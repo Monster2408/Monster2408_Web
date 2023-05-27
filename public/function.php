@@ -13,9 +13,9 @@ class MyFunction {
 
         include($this->conf_path);
         $this->footerContents = [
-            '<span><a href="'.$conf["url"].'/">トップページ</a></span>',
-            '<span><a href="'.$conf["url"].'/privacy-policy">プライバシーポリシー</a></span>',
-            '<span class="name"> Monster2408 &copy; 2021-'.date("Y").'</span>'
+            '<a href="'.$conf["url"].'/">トップページ</a>',
+            '<a href="'.$conf["url"].'/privacy-policy">プライバシーポリシー</a>',
+            'Monster2408 &copy; 2021-'.date("Y")
         ];
         $this->headContents = [];
     }
@@ -52,18 +52,19 @@ class MyFunction {
         echo $html["common_foot"];
     }
     
-    public function printFooter() {
+    public function printFooter($num = -1) {
         include($this->conf_path);
-        echo '<div class="footer-center">';
-        $temp = sizeof($this->footerContents);
-        foreach ($this->footerContents as $item) {
-            $temp = $temp - 1;
-            echo $item;
-            if ($temp > 0) {
-                echo '<br>';
-            }
+        if ($num == -1) {
+            echo '<ul class="footer-center">';
+        } elseif ($num == 0) {
+            echo '<ul class="footer-center" style="position: static;">';
+        } else {
+            echo '<ul class="footer-center">';
         }
-        echo '</div>';
+        foreach ($this->footerContents as $item) {
+            echo '<li>'.$item.'</li>';
+        }
+        echo '</ul>';
     }
 
     public function printHeader() {

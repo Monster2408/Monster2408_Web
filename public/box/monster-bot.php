@@ -12,7 +12,7 @@ $func->printCommonHead();
             Monster2408が開発した多機能Discord Botです。discord.pyで作成されており日々新機能が追加されています。
         </p>
         <p><a href="https://discord.com/api/oauth2/authorize?client_id=602129473084588044&permissions=8&scope=bot" target="_blank">招待リンク</a></p>
-        <?php $func->printFooter(); ?>
     </div>
+    <?php $func->printFooter(); ?>
 </div>
 <?php $func->printCommonFoot(); ?>

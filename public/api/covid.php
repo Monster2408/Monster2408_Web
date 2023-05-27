@@ -35,7 +35,7 @@ $func->addFooterContent('<span><a href="https://github.com/ryo-ma/covid19-japan-
                 }
             ?>
         </table>
-        <?php $func->printFooter(); ?>
     </div>
+    <?php $func->printFooter(0); ?>
 </div>
 <?php $func->printCommonFoot(); ?>

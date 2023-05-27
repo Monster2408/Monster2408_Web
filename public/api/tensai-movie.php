@@ -8,12 +8,12 @@ $func->printCommonHead();
 <div class="all_center">
     <div class="black_box">
         <?php $func->printHeader(); ?>
-            <iframe src="https://www.youtube.com/embed/LzxX3uJOtyY"></iframe>
-            <div class="control">
-                <button id="big">拡大</button> <button id="small">縮小</button>
-            </div>
-        <?php $func->printFooter(); ?>
+        <iframe src="https://www.youtube.com/embed/LzxX3uJOtyY"></iframe>
+        <div class="control">
+            <button id="big">拡大</button> <button id="small">縮小</button>
+        </div>
     </div>
+    <?php $func->printFooter(); ?>
 </div>
 <script>
     $('#big').on('click', function() {

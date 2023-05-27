@@ -112,7 +112,7 @@ $func->printCommonHead("5hanayome.min.css");
             });
             
         </script>
-        <?php $func->printFooter(); ?>
     </div>
+    <?php $func->printFooter(); ?>
 </div>
 <?php $func->printCommonFoot(); ?>
