@@ -23,18 +23,18 @@ $func->printCommonHead();
             <!--<li><a href="./repo">GitHub Source</a></li>-->
             <li><a href="https://www.mlserver.xyz/blog/category/skript-couse/" target="_blank">Skript講座</a></li>
             <li><a href="#" id="js-show-popup">プロフィール</a></li>
+            <li><a href="https://www.amazon.jp/hz/wishlist/ls/2GK9FGJAAN3GH?ref_=wl_share" target="_blank">Monster2408の欲しい物リスト</a></li>
         </ul>
 
         <h1>Service</h1>
         <ul>
             <li><a href="./box/">Monster Box</a></li>
-            <li><a href="./api/covid">Covid</a></li>
+            <li><a href="./api/covid">Covid情報</a></li>
             <li><a href="./api/google_img_search">Google画像検索【サイズ指定】</a></li>
             <li><a href="./api/5hanayome">【五等分の花嫁】中野五月を見極めろ！そこに愛はあるんか？</a></li>
         </ul>
-        
-        <?php $func->printFooter(); ?>
     </div>
+    <?php $func->printFooter(); ?>
 </div>
 <?php include("./assets/include/profile.php"); ?>
 
