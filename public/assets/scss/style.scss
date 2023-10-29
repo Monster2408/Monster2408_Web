@@ -1,4 +1,4 @@
-body {
+body.mc {
     overflow-x: hidden;
     overflow-y: hidden;
     color: rgba(255, 255, 255, 0.9);
@@ -16,8 +16,21 @@ body {
 }
 
 .all_center {
-    height:60px;
     text-align:center;
+}
+
+.all_left {
+    text-align:left;
+}
+
+.all_right {
+    text-align:right;
+}
+
+.all_center,
+.all_left,
+.all_right {
+    height:60px;
     .black_box {
         position:absolute;
         top:50%;

@@ -1,0 +1,1 @@
+header{position:fixed;top:0;left:0;height:80px;padding:2px;background:#fff;width:100%;border-bottom:solid 1px #000}header .header_items{display:flex;align-content:stretch;flex-wrap:nowrap;align-items:center}header .header_items .header_icon img{width:75px;height:75px;border-radius:50%}header .header_items .header_menu .group ul{display:none}.dummy_header{height:80px;padding:4px}

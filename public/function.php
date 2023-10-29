@@ -43,8 +43,6 @@ class MyFunction {
             }
         }
         echo "</head>";
-        echo "<body>";
-        echo "<div class='wrapper'>";
     }
     
     public function printCommonFoot() {
