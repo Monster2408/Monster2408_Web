@@ -24,7 +24,8 @@ $ituki_false = [
     "https://i.gyazo.com/7ed9e7245e5e712a637f5b06edd9fc11.png", # miku?
 ];
 
-$func->printCommonHead("5hanayome.min.css");
+$func->addCustomCss("5hanayome.min.css");
+$func->printCommonHead();
 
 ?>
 <body class="mc">

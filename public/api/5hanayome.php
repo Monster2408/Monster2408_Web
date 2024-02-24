@@ -12,7 +12,7 @@ $func->addFooterContent('<span><a target="_blank" href="https://twitter.com/blac
             <div class="black_box">
                 <?php $func->printHeader(); ?>
                 <h1>ページが移行されました。</h1>
-                <p>5s後に自動移動します。移動しない場合は<a href="../box/5hanayome"></a>から移動してください。</p>
+                <p>5s後に自動移動します。移動しない場合は<a href="../box/5hanayome">コチラ</a>から移動してください。</p>
             </div>
             <?php $func->printFooter(); ?>
         </div>

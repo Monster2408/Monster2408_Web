@@ -4,7 +4,8 @@ $conf_path = "../assets/config.php";
 $func = new MyFunction($conf_path, "Google画像検索【サイズ指定】");
 $func->addFooterContent('<span><a target="_blank" href="https://www.google.com/">powered by Google</a></span>');
 
-$func->printCommonHead("google_img_search.min.css");
+$func->setMainCss("google_img_search.min.css");
+$func->printCommonHead();
 ?>
 <body class="mc">
     <div class="wrapper">

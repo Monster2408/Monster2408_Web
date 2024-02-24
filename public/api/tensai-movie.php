@@ -11,7 +11,7 @@ $func->printCommonHead();
             <div class="black_box">
                 <?php $func->printHeader(); ?>
                 <h1>ページが移行されました。</h1>
-                <p>5s後に自動移動します。移動しない場合は<a href="../box/tensai-movie"></a>から移動してください。</p>
+                <p>5s後に自動移動します。移動しない場合は<a href="../box/tensai-movie">コチラ</a>から移動してください。</p>
             </div>
             <?php $func->printFooter(); ?>
         </div>
