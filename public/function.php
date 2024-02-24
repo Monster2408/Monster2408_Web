@@ -7,6 +7,8 @@ class MyFunction {
     public $footerContents;
     public $headContents;
 
+    public $custom_css_list;
+
     public function __construct($conf_path = "", $title = "Monster2408") {
         $this->conf_path = $conf_path;
         $this->title = $title;
@@ -18,6 +20,7 @@ class MyFunction {
             'Monster2408 &copy; 2021-'.date("Y")
         ];
         $this->headContents = [];
+        $this->custom_css_list = [];
     }
 
     public function addFooterContent($content) {
@@ -26,6 +29,14 @@ class MyFunction {
 
     public function addHeadContent($content) {
         $this->headContents = array_merge(array($content), $this->headContents);
+    }
+
+    /**
+     * @param string $file_name css file name
+     * @return void
+     */
+    public function addCustomCss($file_name) {
+        $this->custom_css_list = array_merge(array($file_name), $this->custom_css_list);
     }
 
     public function printCommonHead($css = "style.min.css") {
