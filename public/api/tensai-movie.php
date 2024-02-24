@@ -10,21 +10,11 @@ $func->printCommonHead();
         <div class="all_center">
             <div class="black_box">
                 <?php $func->printHeader(); ?>
-                <iframe src="https://www.youtube.com/embed/LzxX3uJOtyY"></iframe>
-                <div class="control">
-                    <button id="big">拡大</button> <button id="small">縮小</button>
-                </div>
+                <h1>ページが移行されました。</h1>
+                <p>5s後に自動移動します。移動しない場合は<a href="../box/tensai-movie"></a>から移動してください。</p>
             </div>
             <?php $func->printFooter(); ?>
         </div>
-        <script>
-            $('#big').on('click', function() {
-                alert("big クリックされました");
-            });
-            $('#small').on('click', function() {
-                alert("small クリックされました");
-            });
-        </script>
         <?php $func->printCommonFoot(); ?>
     </div>
 </body>

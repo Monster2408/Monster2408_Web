@@ -31,9 +31,8 @@ $func->printCommonHead();
                 <h1>Service</h1>
                 <ul>
                     <li><a href="./box/">Monster Box(もんすたぁが作ったシステムサービス)</a></li>
-                    <li><a href="./api/covid">Covid情報</a></li>
-                    <li><a href="./api/google_img_search">Google画像検索【サイズ指定】</a></li>
-                    <li><a href="./api/5hanayome">【五等分の花嫁】中野五月を見極めろ！そこに愛はあるんか？</a></li>
+                    <li><a href="./box/google_img_search">Google画像検索【サイズ指定】</a></li>
+                    <li><a href="./box/5hanayome">【五等分の花嫁】中野五月を見極めろ！そこに愛はあるんか？</a></li>
                 </ul>
             </div>
             <?php $func->printFooter(); ?>
