@@ -23,7 +23,7 @@ $func->printCommonHead();
                     <li><a href="https://twitter.com/monster_2408" target="_blank">Twitter</a></li>
                     <!--<li><a href="./repo">GitHub Source</a></li>-->
                     <li><a href="https://www.mlserver.xyz/blog/category/skript-couse/" target="_blank">Skript講座</a></li>
-                    <li><a href="https://monster2408.com/request">もんすたぁへの依頼</a></li>
+                    <li><a href="https://monster2408.com/request/">もんすたぁへの依頼</a></li>
                     <li><a href="#" id="js-show-popup">プロフィール</a></li>
                     <li><a href="https://www.amazon.jp/hz/wishlist/ls/2GK9FGJAAN3GH?ref_=wl_share" target="_blank">Monster2408の欲しい物リスト</a></li>
                 </ul>
