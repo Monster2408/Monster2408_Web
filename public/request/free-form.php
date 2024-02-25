@@ -17,12 +17,36 @@ $func->printCommonHead();
                         <option value="mc-sk">Skript(マインクラフト)</option>
                         <option value="discord">Discord BOT</option>
                     </select>
-                    <label for="sk-version" id="sk-version-label">Skript Version</label>
-                    <input name=
+                    <label for="detail">仕様</label>
+                    <textarea name="detail" id="detail" cols="30" rows="10" required></textarea>
                 </form>
             </div>
             <?php $func->printFooter(); ?>
         </div>
         <?php $func->printCommonFoot(); ?>
+        <script>
+            document.getElementById("type").addEventListener("change", function() {
+                var type = document.getElementById("type").value;
+                var detail_file = null;
+                if (type == "mc-sk") {
+                    detail_file = "skript.txt";
+                } else if (type == "mc-pl") {
+                    detail_file = "plugin.txt";
+                } else if (type == "discord") {
+                    detail_file = "discord.txt";
+                }
+
+                if (detail_file != null) {
+                    var xhr = new XMLHttpRequest();
+                    xhr.open("GET", "./action/get-detail.php?file=" + detail_file, true);
+                    xhr.send();
+                    xhr.onreadystatechange = function() {
+                        if (xhr.readyState == 4 && xhr.status == 200) {
+                            document.getElementById("detail").value = xhr.responseText;
+                        }
+                    }
+                }
+            });
+        </script>
     </div>
 </body>
