@@ -17,7 +17,8 @@ $func->printCommonHead();
                         <option value="mc-sk">Skript(マインクラフト)</option>
                         <option value="discord">Discord BOT</option>
                     </select>
-                    <label for="sk"></label>
+                    <label for="sk-version" id="sk-version-label">Skript Version</label>
+                    <input name=
                 </form>
             </div>
             <?php $func->printFooter(); ?>
