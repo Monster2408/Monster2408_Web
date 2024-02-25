@@ -25,6 +25,7 @@ $func->printCommonHead();
         </div>
         <?php $func->printCommonFoot(); ?>
         <script>
+            setDetailExample("plugin.txt");
             document.getElementById("type").addEventListener("change", function() {
                 var type = document.getElementById("type").value;
                 var detail_file = null;
@@ -36,6 +37,9 @@ $func->printCommonHead();
                     detail_file = "discord.txt";
                 }
 
+                setDetailExample(detail_file);
+            });
+            function setDetailExample(detail_file) {
                 if (detail_file != null) {
                     var xhr = new XMLHttpRequest();
                     xhr.open("GET", "./action/get-detail.php?file=" + detail_file, true);
@@ -46,7 +50,7 @@ $func->printCommonHead();
                         }
                     }
                 }
-            });
+            }
         </script>
     </div>
 </body>
