@@ -5,8 +5,8 @@ if (isset($_GET["file"])) {
     if (file_exists("../sample/" . $file)) {
         echo file_get_contents("../sample/" . $file);
     } else {
-        echo "ファイルが見つかりませんでした。";
+        echo "";
     }
 } else {
-    echo "ファイルが指定されていません。";
+    echo "";
 }

@@ -96,6 +96,49 @@ class MyFunction {
         include($this->conf_path);
         return $conf["url"];
     }
+
+    public function send_to_discord($message, $ip, $type = "other") {
+        include($this->conf_path);
+        $contentsBlocker = [
+            "5.188.211.10",
+            "5.188.211.9",
+            "49.250.233.40",
+            "153.226.133.219"
+        ];
+        if (in_array($ip, (array)$contentsBlocker, true)) {
+            return FALSE;
+        }
+        if (in_array($type, (array)$conf["discord-webhook"]["thread_id"], true) === FALSE) {
+            return FALSE;
+        }
+        $webhook_url = $conf["discord-webhook"]["url"]
+        $thread_id = $conf["discord-webhook"]["thread_id"][$type];
+        $hookObject = json_encode($message);
+        $ch = curl_init();
+        curl_setopt_array( $ch, [
+            CURLOPT_URL => $webhook_url,
+            CURLOPT_POST => true,
+            CURLOPT_POSTFIELDS => $hookObject,
+            CURLOPT_HTTPHEADER => [
+                "Length" => strlen($hookObject),
+                "Content-Type" => "application/json"
+            ]
+        ]);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_VERBOSE, 1);
+        curl_setopt($ch, CURLOPT_HEADER, 1);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
+            'Content-Type: application/json'
+        ));
+        $response = curl_exec( $ch );
+        $header_size = curl_getinfo($ch, CURLINFO_HEADER_SIZE);
+        $header = substr($response, 0, $header_size);
+        $body = substr($response, $header_size);
+        curl_close($ch);
+        return TRUE; //$responseの値がokならtrueを返す
+    }
 }
 
 
