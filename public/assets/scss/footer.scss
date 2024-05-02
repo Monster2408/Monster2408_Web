@@ -1,37 +1,58 @@
-.footer-center {
-    border-top: 1px solid #000; 
-    margin-top: 10px; 
-    margin-bottom: 10px; 
-    padding-top: 20px; 
-    padding-bottom: 20px;
-    padding-bottom: 20px;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
+footer {
     display: flex;
-    justify-content: space-around;
-    list-style: none;
-    a {
-        position: relative;
-        display: inline-block;
-        color: rgba(255,255,255,0.6);
-        transition-duration: 300ms;
-        text-decoration: none;
-        &:hover,
-        &:active {
-            color: rgba(255, 255, 255, 0.92);
-            transition-duration: 300ms;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    border-top: 1px solid #000;
+    background: #fff;
+    .menu-area {
+        width: 50%;
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            .oss-short-name {
+                display: none;
+            }
         }
-        &:hover {
-            width: 100%;
-            cursor: pointer;
-        }
+    }
+    .copy-right-area {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 10px;
     }
 }
 
-// 画面サイズが800px以下の場合
-@media screen and (max-width: 800px) {
-    .footer-center {
-        display: block;
+@media screen and (max-width: 650px) {
+    footer {
+        .menu-area {
+            .nav {
+                .oss-long-name {
+                    display: none;
+                }
+                .oss-short-name {
+                    display: block;
+                }
+            }
+        }
     }
+    
+}
+@media screen and (max-width: 550px) {
+    footer {
+        text-align: center;
+        display: block;
+        height: auto;
+        .menu-area {
+            width: auto;
+            .nav {
+                display: block;
+            }
+        }
+        .copy-right-area {
+            margin-right: auto;
+        }
+    }
+    
 }
