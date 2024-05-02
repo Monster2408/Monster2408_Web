@@ -29,34 +29,10 @@ $func->addStyle('/assets/css/style.min.css');
                         <p>MonsterLifeServerのYouTubeチャンネルです。</p>
                     </div>
                 </a>
-                <a href="https://youtube.mlserver.xyz/" target="_blank" class="card-a-tag">
+                <a href="<?php echo $func->getUrl(); ?>/box/5hanayome" target="_blank" class="card-a-tag">
                     <div class="card-box">
-                        <h1>MonsterLifeServerのYouTube</h1>
-                        <p>MonsterLifeServerのYouTubeチャンネルです。</p>
-                    </div>
-                </a>
-                <a href="https://youtube.mlserver.xyz/" target="_blank" class="card-a-tag">
-                    <div class="card-box">
-                        <h1>MonsterLifeServerのYouTube</h1>
-                        <p>MonsterLifeServerのYouTubeチャンネルです。</p>
-                    </div>
-                </a>
-                <a href="https://youtube.mlserver.xyz/" target="_blank" class="card-a-tag">
-                    <div class="card-box">
-                        <h1>MonsterLifeServerのYouTube</h1>
-                        <p>MonsterLifeServerのYouTubeチャンネルです。</p>
-                    </div>
-                </a>
-                <a href="https://youtube.mlserver.xyz/" target="_blank" class="card-a-tag">
-                    <div class="card-box">
-                        <h1>MonsterLifeServerのYouTube</h1>
-                        <p>MonsterLifeServerのYouTubeチャンネルです。</p>
-                    </div>
-                </a>
-                <a href="https://youtube.mlserver.xyz/" target="_blank" class="card-a-tag">
-                    <div class="card-box">
-                        <h1>MonsterLifeServerのYouTube</h1>
-                        <p>MonsterLifeServerのYouTubeチャンネルです。</p>
+                        <h1>五等分の花嫁ゲーム</h1>
+                        <p>「五等分の花嫁」の中野五月を見比べるゲームです。</p>
                     </div>
                 </a>
             </div>
