@@ -35,6 +35,12 @@ $func->addStyle('/assets/css/style.min.css');
                         <p>「五等分の花嫁」の中野五月を見比べるゲームです。</p>
                     </div>
                 </a>
+                <a href="<?php echo $func->getUrl(); ?>/box/google_img_search" target="_blank" class="card-a-tag">
+                    <div class="card-box">
+                        <h1>サイズ指定式Google画像検索</h1>
+                        <p>Googleでサイズを指定して画像検索します。</p>
+                    </div>
+                </a>
             </div>
         </div>
         <?php include('./assets/include/footer.php'); ?>

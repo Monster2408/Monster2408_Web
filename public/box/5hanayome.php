@@ -1,8 +1,7 @@
 <?php
 
 include("../assets/function.php");
-$conf_path = "../assets/config.php";
-$func = new MyFunction($conf_path, "【五等分の花嫁】中野五月を見極めろ！そこに愛はあるんか？");
+$func = new MyFunction("../assets/config.php", "【五等分の花嫁】中野五月を見極めろ！そこに愛はあるんか？");
 
 $func->addFooterContent('<span><a target="_blank" href="https://twitter.com/black_yameee2/status/1547433293032726529?s=21&t=v8ZD1qfZ_N2eaztNZXsK6w">元ネタ</a></span>');
 
