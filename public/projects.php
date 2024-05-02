@@ -1,7 +1,7 @@
 <?php
 
 include('./assets/function.php');
-$func = new MyFunction('./assets/config.php', "トップページ");
+$func = new MyFunction('./assets/config.php', "プロジェクト");
 
 $func->addStyle('/assets/css/style.min.css');
 
