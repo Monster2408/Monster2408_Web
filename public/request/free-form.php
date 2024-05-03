@@ -14,7 +14,7 @@ $func->addStyle('/assets/css/style.min.css');
     <body>
         <?php include('../assets/include/header.php'); ?>
         <div class="contents">
-            <h1>もんすたぁへの無料依頼</h1>
+            <h1>もんすたぁへの無料依頼(現在送信不可)</h1>
             <form action="./action/discord-webhook.php" method="post" class="m-1">
                 <div class="mb-3">
                     <label for="type" class="form-label">種別</label>
