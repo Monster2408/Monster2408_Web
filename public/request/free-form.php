@@ -1,29 +1,43 @@
 <?php
-include_once("../function.php");
-$conf_path = "../assets/config.php";
-$func = new MyFunction($conf_path, "もんすたぁへの依頼");
 
-$func->printCommonHead();
+include("../assets/function.php");
+$func = new MyFunction("../assets/config.php", "無料依頼フォーム");
+
+$func->addStyle('/assets/css/style.min.css');
+
 ?>
-<body class="mc">
-    <div class="wrapper">
-        <div class="all_left">
-            <div class="black_box">
-                <h1>もんすたぁへの無料依頼</h1>
-                <form action="./action/discord-webhook.php" method="post">
-                    <label for="type">種別</label>
-                    <select name="type" id="type">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="ja">
+    <head>
+        <?php $func->printMetaData(); ?>
+    </head>
+    <body>
+        <?php include('../assets/include/header.php'); ?>
+        <div class="contents">
+            <h1>もんすたぁへの無料依頼(現在送信不可)</h1>
+            <form action="./action/discord-webhook.php" method="post" class="m-1">
+                <div class="mb-3">
+                    <label for="type" class="form-label">種別</label>
+                    <select name="type" id="type" class="form-control">
                         <option value="mc-pl">プラグイン(マインクラフト)</option>
                         <option value="mc-sk">Skript(マインクラフト)</option>
                         <option value="discord">Discord BOT</option>
                     </select>
-                    <label for="detail">仕様</label>
-                    <textarea name="detail" id="detail" cols="30" rows="10" required></textarea>
-                </form>
-            </div>
-            <?php $func->printFooter(); ?>
+                </div>
+                <div class="mb-3">
+                    <label for="detail" class="form-label">仕様</label>
+                    <textarea name="detail" id="detail" cols="30" rows="10" class="form-control" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="contact" class="form-label">連絡先</label>
+                    <input type="text" name="contact" id="contact" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <input type="submit" value="送信" class="btn btn-primary">
+                </div>
+            </form>
         </div>
-        <?php $func->printCommonFoot(); ?>
+        <?php include('../assets/include/footer.php'); ?>
         <script>
             setDetailExample("plugin.txt");
             document.getElementById("type").addEventListener("change", function() {
@@ -52,5 +66,5 @@ $func->printCommonHead();
                 }
             }
         </script>
-    </div>
-</body>
+    </body>
+</html>
