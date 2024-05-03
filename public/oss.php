@@ -28,6 +28,17 @@ $func->addStyle('/assets/css/style.min.css');
                         </div>
                     </div>
                 </a>
+                <a href="https://github.com/Monster2408/MCVersion" target="_blank" class="card-a-tag">
+                    <div class="card-box">
+                        <div class="card-article">
+                            <img src="<?php echo $func->getUrl(); ?>/assets/img/spigot.png" alt="MCVersion(Bukkit API)" class="card-img">
+                        </div>
+                        <div class="card-info-area">
+                            <h1>MCVersion(Bukkit API)</h1>
+                            <p>Minecraftのサーバープラグイン用のAPIです。minecraftのバージョン情報を格納しているAPIでViaVersionなどと併用するとプレイヤーがどのバージョンでサーバーにアクセスしているかを調査可能です。</p>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
         <?php include('./assets/include/footer.php'); ?>
