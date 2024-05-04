@@ -29,7 +29,7 @@ $func->addStyle('/assets/css/5hanayome.min.css');
 
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html lang="ja">
+<html lang="en">
     <head>
         <?php $func->printMetaData(); ?>
     </head>

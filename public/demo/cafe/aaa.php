@@ -5,7 +5,7 @@ $func = new HomePageFunction('./assets/config.php', 'MonsterLifeServer');
 
 ?>
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
     <head>
         <link rel="stylesheet" href="<?php echo $func->getUrl(); ?>/assets/css/style.min.css">
         <link rel="stylesheet" href="<?php echo $func->getUrl(); ?>/assets/css/header.min.css">

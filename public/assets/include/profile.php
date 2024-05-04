@@ -2,7 +2,7 @@
     <h3>Monster2408</h3>
     <p class="text-left">Minecraftでミニゲーム企画を開催しているMonsterLifeServerの運営で開発やYouTubeに投稿する動画の編集などをしています。</p>
     <p class="text-left">元々はコマンドでミニゲーム企画を開催していましたが限界を感じてSkriptを使い始めました。そこから5つほど企画を作り，バグなどの原因でプラグインの勉強を始めました。</p>
-    <p class="text-left">本格的な開発者歴自体は5年ぐらいです。Skript以外ではHTML,CSS,JavaScript,PHP,Python,MySQL,Cなどを使てシステム設計をしています。</p>
+    <p class="text-left">本格的な開発者歴自体は5年ぐらいです。Skript以外ではJava,HTML,CSS,JavaScript,PHP,Python,MySQL,Cなどを使てシステム設計をしています。</p>
     <p class="text-left">仕事でも似たようなことをしています。</p>
 </div>
 <div class="w-50">
