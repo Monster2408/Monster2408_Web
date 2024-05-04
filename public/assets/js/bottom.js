@@ -1,19 +1,12 @@
-function popupImage() {
-    var popup = document.getElementById('js-popup');
-    if(!popup) return;
+const japanese_button = document.getElementById('langJa');
+const english_button = document.getElementById('langEn');
 
-    var blackBg = document.getElementById('js-black-bg');
-    var closeBtn = document.getElementById('js-close-btn');
-    var showBtn = document.getElementById('js-show-popup');
+japanese_button.addEventListener('click', () => {
+    html_lang = document.getElementsByTagName('html')[0];
+    html_lang.setAttribute('lang', 'ja');
+});
 
-    closePopUp(blackBg);
-    closePopUp(closeBtn);
-    closePopUp(showBtn);
-    function closePopUp(elem) {
-        if(!elem) return;
-        elem.addEventListener('click', function() {
-            popup.classList.toggle('is-show');
-        });
-    }
-}
-popupImage();
+english_button.addEventListener('click', () => {
+    html_lang = document.getElementsByTagName('html')[0];
+    html_lang.setAttribute('lang', 'en');
+});

@@ -10,7 +10,7 @@ $func->addStyle('/assets/css/google_img_search.min.css');
 
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html lang="ja">
+<html lang="en">
     <head>
         <?php $func->printMetaData(); ?>
     </head>

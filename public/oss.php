@@ -7,15 +7,15 @@ $func->addStyle('/assets/css/style.min.css');
 
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html lang="ja">
+<html lang="en">
     <head>
         <?php $func->printMetaData(); ?>
     </head>
     <body>
         <?php include('./assets/include/header.php'); ?>
         <div class="contents">
-            <h1>プロジェクト</h1>
-            <p>現在進行中のプロジェクトです。</p>
+            <h1 lang="ja">オープンソースソフトウェア</h1>
+            <h1 lang="en">Open-source Software</h1>
             <div class="d-flex card-list justify-content-around flex-wrap flex-row">
                 <a href="https://www.spigotmc.org/resources/simplegamemode.116561/" target="_blank" class="card-a-tag">
                     <div class="card-box">
