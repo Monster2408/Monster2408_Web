@@ -27,7 +27,7 @@ header {
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 850px) {
     header {
         .menu-area {
             .nav {
@@ -43,10 +43,8 @@ header {
     
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
     header {
-        display: block;
-        text-align: center;
         .menu-area {
             display: none;
         }
@@ -55,4 +53,12 @@ header {
         }
     }
     
+}
+
+@media screen and (max-width: 350px) {
+    header {
+        display: block;
+        text-align: center;
+        height: 70px;
+    }
 }

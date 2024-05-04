@@ -24,7 +24,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
     footer {
         .menu-area {
             .nav {
@@ -48,6 +48,9 @@ footer {
             width: auto;
             .nav {
                 display: block;
+                li {
+                    border-bottom: #000 solid 1px;
+                }
             }
         }
         .copy-right-area {

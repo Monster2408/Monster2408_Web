@@ -24,7 +24,14 @@ $func->addStyle('/assets/css/style.min.css');
                         </div>
                         <div class="card-info-area">
                             <h1>SimpleGameMode(Bukkit Plugin)</h1>
-                            <p>Minecraftのサーバー用プラグインです。ゲームモード変更コマンドを短縮します。</p>
+                            <p lang="ja">
+                                Minecraftのサーバー用プラグインです。
+                                ゲームモード変更コマンドを短縮します。
+                            </p>
+                            <p lang="en">
+                                Plugin for Minecraft server. 
+                                Shorten the game mode change command.
+                            </p>
                         </div>
                     </div>
                 </a>
@@ -35,7 +42,13 @@ $func->addStyle('/assets/css/style.min.css');
                         </div>
                         <div class="card-info-area">
                             <h1>MCVersion(Bukkit API)</h1>
-                            <p>Minecraftのサーバープラグイン用のAPIです。minecraftのバージョン情報を格納しているAPIでViaVersionなどと併用するとプレイヤーがどのバージョンでサーバーにアクセスしているかを調査可能です。</p>
+                            <p lang="ja">
+                                Minecraftのサーバープラグイン用のAPIです。
+                                minecraftのバージョン情報を格納しているAPIでViaVersionなどと併用するとプレイヤーがどのバージョンでサーバーにアクセスしているかを調査可能です。
+                            </p>
+                            <p lang="en">
+                                API for the Minecraft server plugin, which stores minecraft version information and can be used in conjunction with ViaVersion and other APIs to determine which version of the server a player is accessing.
+                            </p>
                         </div>
                     </div>
                 </a>
