@@ -10,12 +10,12 @@
         <input type="radio" name="land" id="langEn" checked>
         
         <label for="langJa">
-            <span lang="ja">日本語</span>
-            <span lang="en">Japanese</span>
+            <span lang="ja">Japanese</span>
+            <span lang="en">日本語</span>
         </label>
         <label for="langEn">
-            <span lang="ja">英語</span>
-            <span lang="en">English</span>
+            <span lang="ja">English</span>
+            <span lang="en">英語</span>
         </label>
     </div>
 </header>
