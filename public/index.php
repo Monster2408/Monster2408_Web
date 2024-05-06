@@ -14,7 +14,7 @@ $func->addStyle('/assets/css/style.min.css');
     <body>
         <?php include('./assets/include/header.php'); ?>
         <div class="contents">
-            <div class="d-flex align-items-center p-1">
+            <div class="about-area">
                 <?php include('./assets/include/profile.php'); ?>
             </div>
             <div class="p-1">

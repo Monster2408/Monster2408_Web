@@ -14,8 +14,10 @@ $func->addStyle('/assets/css/style.min.css');
     <body>
         <?php include('./assets/include/header.php'); ?>
         <div class="contents">
-            <h1>プロジェクト</h1>
-            <p>現在進行中のプロジェクトです。</p>
+            <h1 lang="ja">プロジェクト</h1>
+            <h1 lang="en">Projects</h1>
+            <p lang="ja">現在進行中のプロジェクトです。</p>
+            <p lang="en">This is an ongoing project.</p>
             <div class="d-flex card-list justify-content-around flex-wrap flex-row">
                 <a href="https://www.mlserver.xyz/" target="_blank" class="card-a-tag">
                     <div class="card-box">

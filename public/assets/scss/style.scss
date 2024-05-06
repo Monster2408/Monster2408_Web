@@ -40,9 +40,34 @@ body {
                 color: #000;
             }
         }
+        &.about-area,
+        .about-area {
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            .profile-image,
+            .profile-description {
+                width: 50%;
+            }
+        }
     }
     a {
         color:rgb(79 70 229);;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        .contents {
+            &.about-area,
+            .about-area {
+                display: block;
+                .profile-image,
+                .profile-description {
+                    width: 100%;
+                }
+            }
+        }
     }
 }
 
@@ -78,4 +103,3 @@ html:not(:lang(ja)) :lang(ja) {
 html:not(:lang(en)) :lang(en) {
     display: none;
 }
-
