@@ -39,7 +39,7 @@ class MyFunction {
 
     public function printBottomCommon() {
         include($this->conf_path);
-        echo '<script src="'.$this->getNoCacheUrl('/assets/js/bottom.js').'"></script>';
+        echo '<script src="'.$this->getNoCacheUrl('/assets/js/language.js').'"></script>';
     }
 
     public function getAssetsPath() {
