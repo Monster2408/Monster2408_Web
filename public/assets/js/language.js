@@ -22,3 +22,16 @@ english_button.addEventListener('click', () => {
         }
     }
 });
+
+onload = () => {
+    html_lang = document.getElementsByTagName('html')[0];
+    if (html_lang.getAttribute('lang') != 'en') {
+        lang_code = html_lang.getAttribute('lang');
+        aTagList = document.getElementsByTagName('a');
+        for (let i = 0; i < aTagList.length; i++) {
+            if (aTagList[i].getAttribute('href').startsWith("https://monster2408.com/") && aTagList[i].getAttribute('href').startsWith("https://monster2408.com/blog") == false) {
+                aTagList[i].setAttribute('href', aTagList[i].getAttribute('href') + "?lang=ja");
+            }
+        }
+    }
+}

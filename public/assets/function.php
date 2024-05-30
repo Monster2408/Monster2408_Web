@@ -6,6 +6,7 @@ class MyFunction {
     private $css_list = array();
     private $footer_content = array();
     private $title;
+    private $language_code;
 
     public function __construct($conf_path, $title) {
         $this->conf_path = $conf_path;
@@ -13,6 +14,13 @@ class MyFunction {
 
         include($conf_path);
         $this->title = $title;
+
+        $language_code = "en";
+        if (isset($_GET["lang"])) {
+            $language_code = $_GET["lang"];
+        }
+        $this->language_code = $language_code;
+
     }
 
     public function getNoCacheUrl($file_path) {
@@ -52,6 +60,10 @@ class MyFunction {
 
     public function addFooterContent($footer_content) {
         $this->footer_content = array_merge($this->footer_content, array($footer_content));
+    }
+
+    public function getLanguageCode() {
+        return $this->language_code;
     }
 
 }

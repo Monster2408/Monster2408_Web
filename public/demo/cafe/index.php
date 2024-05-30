@@ -3,14 +3,9 @@ echo $_SERVER["DOCUMENT_ROOT"];
 include('./assets/function.php');
 $func = new HomePageFunction('./assets/config.php', 'MonsterLifeServer');
 
-$language_code = "en";
-if (isset($_GET["lang"])) {
-    $language_code = $_GET["lang"];
-}
-
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html lang="<?php echo $language_code; ?>">
+<html lang="<?php echo $func->getLanguageCode(); ?>">
     <head>
         <link rel="stylesheet" href="<?php echo $func->getUrl(); ?>/assets/css/style.min.css">
         <link rel="stylesheet" href="<?php echo $func->getUrl(); ?>/assets/css/header.min.css">

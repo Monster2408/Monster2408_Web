@@ -6,8 +6,8 @@
         <?php include($func->getAssetsPath()."/assets/include/menu.php"); ?>
     </div>
     <div class="language_label">
-        <input type="radio" name="land" id="langJa">
-        <input type="radio" name="land" id="langEn" checked>
+        <input type="radio" name="land" id="langJa"<?php if ($func->getLanguageCode() == "ja") { echo " checked"; } ?>>
+        <input type="radio" name="land" id="langEn"<?php if ($func->getLanguageCode() == "en") { echo " checked"; } ?>>
         
         <label for="langJa">
             <span lang="ja">Japanese</span>

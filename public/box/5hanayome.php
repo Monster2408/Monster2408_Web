@@ -27,14 +27,9 @@ $ituki_false = [
 $func->addStyle('/assets/css/style.min.css');
 $func->addStyle('/assets/css/5hanayome.min.css');
 
-$language_code = "en";
-if (isset($_GET["lang"])) {
-    $language_code = $_GET["lang"];
-}
-
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html lang="<?php echo $language_code; ?>">
+<html lang="<?php echo $func->getLanguageCode(); ?>">
     <head>
         <?php $func->printMetaData(); ?>
     </head>
