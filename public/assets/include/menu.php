@@ -11,8 +11,8 @@ $viewCountYesterday = $viewCounterData["yesterday_count"];
 ?>
 <ul class="nav">
     <li><a href="<?php echo $func->getUrl(); ?>/about">About</a></li>
-    <li lang="en"><a href="<?php echo $func->getUrl(); ?>/blog/">Blog</a></li>
-    <li lang="ja"><a href="<?php echo $func->getUrl(); ?>/blog/">ブログ</a></li>
+    <li lang="en"><a href="<?php echo $func->getUrl(); ?>/featured-products/">Blog</a></li>
+    <li lang="ja"><a href="<?php echo $func->getUrl(); ?>/featured-products/">ブログ</a></li>
     <li lang="en"><a href="<?php echo $func->getUrl(); ?>/projects">Projects</a></li>
     <li lang="ja"><a href="<?php echo $func->getUrl(); ?>/projects">プロジェクト</a></li>
     <li lang="en"><a href="<?php echo $func->getUrl(); ?>/oss"><span class="oss-long-name">Open Source</span><span class="oss-short-name">OSS</span></a></li>
