@@ -52,6 +52,22 @@ $func->addStyle('/assets/css/style.min.css');
                         </div>
                     </div>
                 </a>
+                <a href="https://github.com/Monster2408/TransTube" target="_blank" class="card-a-tag">
+                    <div class="card-box">
+                        <div class="card-article">
+                            <img src="<?php echo $func->getUrl(); ?>/assets/img/transtube_logo.png" alt="TransTube(windows software)" class="card-img">
+                        </div>
+                        <div class="card-info-area">
+                            <h1>TransTube(windows software)</h1>
+                            <p lang="ja">
+                                Windows専用動画変換ツールです。
+                            </p>
+                            <p lang="en">
+                                Video conversion tool for Windows.
+                            </p>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
         <?php include('./assets/include/footer.php'); ?>
