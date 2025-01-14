@@ -19,7 +19,7 @@ $func->addStyle('/assets/css/style.min.css');
             <p lang="ja">現在進行中のプロジェクトです。</p>
             <p lang="en">This is an ongoing project.</p>
             <div class="d-flex card-list justify-content-around flex-wrap flex-row">
-                <a href="https://www.mlserver.xyz/" target="_blank" class="card-a-tag">
+                <a href="https://wiki.mlserver.xyz/" target="_blank" class="card-a-tag">
                     <div class="card-box">
                         <div class="card-article">
                             <img src="<?php echo $func->getUrl(); ?>/assets/img/mls_icon.png" alt="MonsterLifeServer" class="card-img">
